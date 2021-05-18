@@ -8,19 +8,32 @@
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="Red">
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100" />
             <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
-            <ColumnDefinition />
+            
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="45"/>
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <Label x:Name="label" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" Content="Red View  Model" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FFB7EA0C"/>
+        <Label x:Name="label" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Content="Red View  Model" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FFB7EA0C"/>
+        <Label x:Name="lblNome" Content="Nome" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblEmail" Content="E-Mail" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblNascimento" Content="Nascimento" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblSexo" Content="Sexo" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <Label x:Name="lblProfissao" Content="Profissão" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="txtNome" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEmail" Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <DatePicker Grid.Column="1" Grid.Row="3" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+
 
     </Grid>
 </UserControl>
