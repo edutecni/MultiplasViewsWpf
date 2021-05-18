@@ -35,5 +35,10 @@ namespace MultiplasViewsWpf
         {
             DataContext = new BluewViewModel();
         }
+
+        private void OrangeVew_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new OrangeViewModel();
+        }
     }
 }

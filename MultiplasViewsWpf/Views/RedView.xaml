@@ -7,7 +7,20 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid Background="Red">
-        <Label x:Name="label" Content="Red View  Model" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FFB7EA0C"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label x:Name="label" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="4" Content="Red View  Model" Margin="0,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" Foreground="#FFB7EA0C"/>
 
     </Grid>
 </UserControl>

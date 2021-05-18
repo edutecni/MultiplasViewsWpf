@@ -9,11 +9,22 @@
         mc:Ignorable="d"
         Title="Multiplas Views" Height="450" Width="800">
     <Window.Resources>
+        <!--
+            Para se adicionar uma nova View:
+        
+            1 - Crie uma nova classe na pasta ViewModels com o respectivo nome da View;
+            2 - Adicione um novo User Control  (WPF) na pasta Views;
+            3 - Crie um novo templente conforme abaixo;
+            4 - Adicione um novo botão que irá instanciar a nova View
+        -->
         <DataTemplate x:Name="redViewTemplate" DataType="{x:Type viewmodels:RedViewModel}">
             <views:RedView DataContext="{Binding}" />
         </DataTemplate>
         <DataTemplate x:Name="blueViewTemplate" DataType="{x:Type viewmodels:BluewViewModel}">
             <views:BlueView DataContext="{Binding}" />
+        </DataTemplate>
+        <DataTemplate x:Name="OrangeViewTemplate" DataType="{x:Type viewmodels:OrangeViewModel}">
+            <views:OrangeView DataContext="{Binding}" />
         </DataTemplate>
     </Window.Resources>
     
@@ -37,6 +48,7 @@
             <StackPanel>
                 <Button  Content="Red View" Click="RedView_Clicked" />
                 <Button Content="Blue View" Click="BlueView_Clicked"/>
+                <Button Content="Orange View" Click="OrangeVew_Clicked" />
             </StackPanel>
         </DockPanel>
 
